@@ -1,5 +1,8 @@
+/* IMPORTAR FONTE: Roboto */
+
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* VARIÁVEIS */
 :root {
     --cor1: #24DDE0;
     --cor2: #2466E0;
@@ -9,14 +12,15 @@
     --cor6: #6FBBE0;
 }
 
+/* DEFINIÇÕES GLOBAIS */
 * {
     margin: 0;
     padding: 0;
     border: 0;
     outline: none;
     text-decoration: none;
-    text-transform: capitalize;
     font-family: "Roboto", sans-serif;
+    transition: 0.2s;
 }
 
 section {
@@ -24,6 +28,11 @@ section {
     margin: 0 auto;
 }
 
+.destaque {
+    color: var(--cor5);
+}
+
+/* TOPO DA PÁGINA */
 .header {
     position: fixed;
     top: 0;
@@ -56,4 +65,73 @@ section {
 .header section .navegacao a:hover {
     color: var(--cor6);
     text-decoration: underline;
+}
+
+/* INICIO DA PÁGINA */
+.inicio-conteiner {
+    padding-top: 95px;
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.inicio-conteiner section {
+    min-height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.inicio-conteiner section > img {
+    border: 5px solid #e2e2e2;
+    border-radius: 50%;
+    width: 250px;
+}
+
+.inicio-conteiner section > h2 {
+    font-weight: bold;
+    font-size: 40px
+}
+
+.inicio-conteiner section .bio {
+    font-size: 23px;
+    color: #4e4e4e;
+}
+
+.inicio-conteiner section .conteudo {
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 450;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* BOX DA PÁGINA */
+.boxes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    margin-top: 100px;
+    max-height: 200px;
+    min-width: 110px;
+    max-width: 150px;
+    box-shadow: 0 0 25px 5px #00000042;
+    background-color: white;
+    border-bottom: 3px solid #24A0E0;
+    border-radius: 5px 5px 0 0;
+}
+
+.box img {
+    margin-top: 10px;
+    width: 80px;
+}
+
+.box p {
+    font-weight: 500;
+    font-size: 21px;
+    color: #6d6d6d;
 }
