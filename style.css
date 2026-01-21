@@ -1,6 +1,6 @@
 /* IMPORTAR FONTE: Roboto */
-
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 /* VARIÁVEIS */
 :root {
@@ -11,6 +11,7 @@
     --cor5: #242BE0;
     --cor6: #6FBBE0;
 }
+
 
 /* DEFINIÇÕES GLOBAIS */
 body {
@@ -46,6 +47,17 @@ section {
 
 .destaque {
     color: var(--cor5);
+}
+
+.botao {
+    background-color: var(--cor2);
+    color: white;
+    font-weight: 400;
+    text-decoration: underline;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 0 0 4px 3px #0000003f;
 }
 
 /* TOPO DA PÁGINA */
@@ -85,4 +97,45 @@ section {
 .header section .navegacao a:hover {
     color: var(--cor6);
     text-decoration: underline;
+}
+
+
+/* SOBRE MIM DA PÁGINA*/
+.secao .sobre-mim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}   
+
+.sobre-mim img {
+    width: 250px;
+}
+
+.sobre-mim .apres {
+    margin-left: 20px;
+}
+
+.sobre-mim .apres .ant-h1 {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.sobre-mim .apres h1 {
+    color: var(--cor2);
+    text-shadow: 0px 2px 3px #00000088;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #e9e9e9;
+    max-width: 470px;
+}
+
+.sobre-mim .apres .sobre {
+    text-align: justify;
+    max-width: 600px;
+    line-height: 22px;
+}
+
+.sobre-mim .apres .botao {
+    margin-top: 15px;
+    margin-right: 15px;
 }
