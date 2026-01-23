@@ -54,8 +54,8 @@ section {
     color: white;
     font-weight: 400;
     text-decoration: underline;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 10px 15px;
+    border-bottom: 3px solid #174292;
     display: inline-block;
     box-shadow: 0 0 4px 3px #0000003f;
 }
@@ -105,8 +105,9 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-}   
+    min-height: calc(100vh - 270px);
+    padding-bottom: 0;
+}  
 
 .sobre-mim img {
     width: 250px;
@@ -138,4 +139,78 @@ section {
 .sobre-mim .apres .botao {
     margin-top: 15px;
     margin-right: 15px;
+}
+
+
+/* ADAPTAÇÃO PARA DISPOSITIVOS MOVÉIS - CELULARES*/
+@media (max-width: 767px) {
+
+    .secao .sobre-mim {
+        flex-direction: column;
+        min-height: calc(100svh - 110px);
+        justify-content: flex-start;
+        padding-top: 30px;
+    }
+
+    .sobre-mim img {
+        margin-top: 110px;
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .sobre-mim .apres {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .sobre-mim .apres h1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sobre-mim .apres .sobre {
+        max-width: 100%;
+        padding: 0 10px;
+        text-align: justify;
+    }
+}
+
+
+/* ADAPTAÇÃO PARA TABLETS*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .secao .sobre-mim {
+        flex-direction: column;
+        padding-top: 120px;
+        min-height: auto;
+    }
+
+    .sobre-mim img {
+        width: 220px;
+        margin-bottom: 25px;
+    }
+
+    .sobre-mim .apres {
+        margin-left: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre-mim .apres h1 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .sobre-mim .apres .sobre {
+        max-width: 720px;
+        padding: 0 20px;
+    }
+
+    .sobre-mim .apres .botao {
+        display: inline;
+    }
 }
