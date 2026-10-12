@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e70338b9bd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/mobile.css">
+    <title>Misael Cunha - Portfólio</title>
+</head>
+<body>
+    <header>
+        <h3 id="logo">Misael Cunha</h3>
+
+        <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</span>
+
+        <nav id="menus">
+            <span class="material-symbols-outlined" id="close-burguer" onclick="clickMenu()">close</span>
+            <ul>
+                <li class="nav-link"><a href="#">Ínicio</a></li>
+                <li class="nav-link"><a href="#">Sobre</a></li>
+                <li class="nav-link"><a href="#">Projetos</a></li>
+                <li class="nav-link"><a href="#">Habilidades</a></li>
+                <li class="nav-link"><a href="#">Experiência</a></li>
+                <li class="nav-link"><a href="#">Formação</a></li>
+                <li class="nav-link"><a href="#">Depoimentos</a></li>
+                <li class="nav-link"><a href="#">Contato</a></li>
+
+                <li class="nav-link" id="nav-cv"><a href=""><i class="fa-solid fa-file-arrow-down"></i>Baixar CV</a></li>
+            </ul>
+        </nav>
+
+        <a href="" id="cv-header"><i class="fa-solid fa-file-arrow-down"></i>Baixar CV</a>
+    </header>
+    <script>
+        function clickMenu() {
+            const menus = document.getElementById('menus');
+            const burguer = document.getElementById('burguer');
+            
+            if (menus.style.display === 'flex') {
+                menus.style.display = 'none';
+                burguer.style.display = 'block';
+            } else {
+                menus.style.display = 'flex';
+                burguer.style.display = 'none';
+            }
+        }
+
+        document.querySelectorAll('#menus nav a, #menus .nav-link a').forEach(link => {
+        link.addEventListener('click', () => {
+            const menus = document.getElementById('menus');
+            const burguer = document.getElementById('burguer');
+            menus.style.display = 'none';
+            burguer.style.display = 'block';
+        });
+    });
+    </script>
+</body>
+</html>
