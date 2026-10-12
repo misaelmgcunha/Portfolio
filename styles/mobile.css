@@ -23,13 +23,18 @@
     box-sizing: border-box;
 }
 
-/* ESTILIZAÇÃO DO SITE */
+/* ================================================================== */
+/* HEADER */
 header {
     background-color: var(--cor2);
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 50px;
+
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 header > h3 {
@@ -116,3 +121,102 @@ header > a#cv-header {
     display: none;
 }
 
+/* ================================================================== */
+/* MAIN */
+main {
+    display: grid;
+    grid-template-rows: auto repeat(7, 350px);
+    grid-template-columns: auto 90vw auto;
+}
+
+section#inicio {
+   grid-area: 1 / 1 / 2 / -1;
+   background-image: url(../imgs/banner-limpo.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+   padding-left: 25px;
+   gap: 5px;
+}
+
+section#inicio > p#in-apre {
+    padding-top: 20px;
+    font-family: var(--fonte1);
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--cor4);
+}
+
+section#inicio > h1 {
+    font-family: var(--fonte2);
+    font-size: 2em;
+    color: var(--cor6);
+}
+
+section#inicio > h1 > span {
+    color: var(--cor4);
+}
+
+section#inicio > p#in-funcao {
+    font-family: var(--fonte1);
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--cor6);
+}
+
+section#inicio > p#in-info {
+    font-family: var(--fonte1);
+    text-align: left;
+    font-size: 1em;
+    color: var(--cor7);
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+section#inicio > div#in-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+section#inicio > div#in-links > a#in-projetos {
+    font-size: 0.8em;
+    text-decoration: none;
+    font-family: var(--fonte1);
+    font-weight: bold;
+    color: var(--cor6);
+    background-color: var(--cor3);
+    border-radius: 15px;
+    padding: 7px 25px;
+}
+
+section#inicio > div#in-links > a#in-contato {
+    font-size: 0.8em;
+    text-decoration: none;
+    font-family: var(--fonte1);
+    font-weight: bold;
+    color: var(--cor6);
+    background-color: transparent;
+    border: 2px solid var(--cor3);
+    border-radius: 15px;
+    padding: 7px 25px;
+}
+
+section#inicio > div#in-redes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.2em;
+    padding-bottom: 20px;
+}
+
+section#inicio > div#in-redes > a {
+    color: var(--cor6);
+}
