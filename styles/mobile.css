@@ -491,6 +491,7 @@ section#projetos > div#pr-projetos > div.pr-projeto > div.pr-tags {
 
 section#projetos > div#pr-projetos > div.pr-projeto > div.pr-tags > p {
     font-family: var(--fonte1);
+    font-size: 1em;
     color: var(--cor4);
     border: 1px solid var(--cor7);
     border-radius: 5px;
@@ -521,6 +522,7 @@ section#projetos > div#pr-projetos > div.pr-projeto > div#pr-links > a {
     border-radius: 20px;
     text-decoration: none;
     font-family: var(--fonte1);
+    font-size: 0.9em;
     font-weight: bold
 }
 
@@ -578,6 +580,7 @@ section#contato > a {
     color: var(--cor6);
     font-family: var(--fonte1);
     font-weight: bold;
+    font-size: 1em;
 }
 /* FIM DA SEÇÃO MEU CONTATO */
 
