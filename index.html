@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="styles/mobile.css">
     <link rel="stylesheet" href="styles/tablet.css">
+    <link rel="stylesheet" href="styles/desktop.css">
     <title>Misael Cunha - Portfólio</title>
 </head>
 <body>
@@ -105,7 +106,7 @@
                 <div class="hab-box" id="box-css">
                     <img src="imgs/css3.svg" alt="CSS3">
                     <h3>CSS</h3>
-                    <p>70%</p>
+                    <p>60%</p>
                     <div class="barra">
                         <div class="progresso"></div>
                     </div>
@@ -121,7 +122,7 @@
                 <div class="hab-box" id="box-git">
                     <img src="imgs/git.svg" alt="Git">
                     <h3>Git</h3>
-                    <p>50%</p>
+                    <p>40%</p>
                     <div class="barra">
                         <div class="progresso"></div>
                     </div>
@@ -175,28 +176,6 @@
     </footer>
 
     <!-- JAVASCRIPT -->
-    <script>
-        function clickMenu() {
-            const menus = document.getElementById('menus');
-            const burguer = document.getElementById('burguer');
-            
-            if (menus.style.display === 'flex') {
-                menus.style.display = 'none';
-                burguer.style.display = 'block';
-            } else {
-                menus.style.display = 'flex';
-                burguer.style.display = 'none';
-            }
-        }
-
-        document.querySelectorAll('#menus nav a, #menus .nav-link a').forEach(link => {
-        link.addEventListener('click', () => {
-            const menus = document.getElementById('menus');
-            const burguer = document.getElementById('burguer');
-            menus.style.display = 'none';
-            burguer.style.display = 'block';
-        });
-    });
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
